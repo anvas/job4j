@@ -1,4 +1,4 @@
-package ru.job4j.point;
+package ru.job4j.condition;
 
 /**
  * Программа расчета расстояния между точками в системе координат.
