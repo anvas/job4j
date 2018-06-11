@@ -27,8 +27,6 @@ public class Max {
      * @return Большее число.
      */
     public int max(int first, int second, int third) {
-        int temp = this.max(first, second);
-        temp = this.max(temp, third);
-        return temp;
+        return max(max(first, second), third);
     }
 }
