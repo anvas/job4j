@@ -1,7 +1,7 @@
 package ru.job4j.max;
 
 /**
- * Программа - Максимум из 2-х чисел.
+ * Программа - Определение максимального числа.
  * @author Andrey Vasiliev (admsocs@yandex.ru).
  * @version $Id$
  * @since 0.1
@@ -10,12 +10,25 @@ package ru.job4j.max;
 public class Max {
 
     /**
-     * Отвечает на вопросы.
+     * Метод определяет максимальное из 2-х чисел.
      * @param first Первое число.
      * @param second Второе число.
-     * @return Ответ.
+     * @return Большее число.
      */
     public int max(int first, int second) {
         return first < second ? second : first;
+    }
+
+    /**
+     * Метод определяет максимальное из 3-х чисел.
+     * @param first Первое число.
+     * @param second Второе число.
+     * @param third Третье число.
+     * @return Большее число.
+     */
+    public int max(int first, int second, int third) {
+        int temp = this.max(first, second);
+        temp = this.max(temp, third);
+        return temp;
     }
 }

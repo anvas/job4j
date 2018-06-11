@@ -5,7 +5,7 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 /**
- * Тест.
+ * Тест - наибольшее из чисел.
  *
  *@author Andrey Vasiliev (admsocs@yandex.ru).
  *@version $Id$
@@ -44,4 +44,33 @@ public class MaxTest {
         assertThat(result, is(2));
     }
 
+    /**
+     * Наибольшее первое.
+     */
+    @Test
+    public void whenFirstMoreSecondThird() {
+        Max maxim = new Max();
+        int result = maxim.max(4, 2, 1);
+        assertThat(result, is(4));
+    }
+
+    /**
+     * Наибольшее второе.
+     */
+    @Test
+    public void whenSecondMoreFirstThird() {
+        Max maxim = new Max();
+        int result = maxim.max(3, 5, 1);
+        assertThat(result, is(5));
+    }
+
+    /**
+     * Наибольшее третье.
+     */
+    @Test
+    public void whenThirdMoreFirstSecond() {
+        Max maxim = new Max();
+        int result = maxim.max(3, 2, 5);
+        assertThat(result, is(5));
+    }
 }
