@@ -1,4 +1,4 @@
-package ru.job4j.counter;
+package ru.job4j.loop;
 
 /**
  * Программа - Сумма четных чисел из диапазона start ... finish.
