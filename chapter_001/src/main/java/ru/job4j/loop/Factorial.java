@@ -9,15 +9,13 @@ package ru.job4j.loop;
 
 public class Factorial {
 
-    int factorial = 1;
-
     /**
      * Метод возвращает рассчитанный факториал для числа.
      * @param n Аргумент.
      * @return Рассчитанный факториал.
      */
 
-    public int calc(int n) {
+    public int calc(int n, int factorial) {
         for (int index = 1; index <= n; index++) {
             factorial = factorial * index;
         }
