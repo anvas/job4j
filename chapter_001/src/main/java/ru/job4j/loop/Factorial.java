@@ -15,9 +15,10 @@ public class Factorial {
      * @return Рассчитанный факториал.
      */
 
-    public int calc(int n, int factorial) {
+    public int calc(int n) {
+        int factorial = 1;
         for (int index = 1; index <= n; index++) {
-            factorial = factorial * index;
+            factorial *= index;
         }
         return factorial;
     }
